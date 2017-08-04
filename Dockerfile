@@ -3,7 +3,7 @@ RUN apk add --no-cache --virtual .buildpack-deps \
                                  ca-certificates \
                                  curl \
                                  tar && \
-    curl --location https://github.com/rancher/cli/releases/download/v0.4.0-rc1/rancher-linux-amd64-v0.4.0-rc1.tar.gz \
+    curl --location https://github.com/rancher/cli/releases/download/v0.6.2/rancher-linux-amd64-v0.6.2.tar.gz \
     | tar --gzip --extract --file - --directory /usr/local/bin/ --strip-components 2 && \
     apk del --no-cache .buildpack-deps
 WORKDIR /work/
